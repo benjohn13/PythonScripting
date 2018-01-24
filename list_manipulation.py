@@ -56,17 +56,17 @@
 # with something else?
 >>> my_list [0:1] = ['a', 'b']
 >>> my_list
-['a', 'b', 2, 'c', 'd', 5.0, False, 7, 8]
->>> 
-
-# You could also call out the item you want to remove
->>> my_list.remove(2)
->>> my_list
 ['a', 'b', 'c', 'd', 5.0, False, 7, 8]
 >>> 
 
+# You could also call out the item you want to remove
+>>> my_list.remove(False)
+>>> my_list
+['a', 'b', 'c', 'd', 5.0, 7, 8]
+>>> 
+
 # And you could change the size of the list when replacing data
->>> my_list [4:7] = ['e', 'f']
+>>> my_list [4:6] = ['e', 'f']
 >>> my_list
 ['a', 'b', 'c', 'd', 'e', 'f']
 >>> 
