@@ -15,10 +15,7 @@
 61
 >>>
 
-# This particular dictionary does not garuntee any kind of order, so 
-# we will not focus on that for now. Let's say we want to add someone
-# to the dictionary.
-
+# Let's say we want to add someone to the dictionary
 # Using the assignment operator to add Elsa
 >>> ages['Elsa'] = 21
 >>> ages
@@ -31,7 +28,7 @@
 {'Cathy': 38, 'Elsa': 21, 'Bob': 91, 'Dan': 29, 'Alice': 54}
 >>> 
 
-# Now let's delete some data (careful not to delete the who dictionary)
+# Now let's delete some data (careful not to delete the whole dictionary)
 >>> del ages['Alice']
 >>> ages
 {'Cathy': 38, 'Elsa': 21, 'Bob': 91, 'Dan': 29}
