@@ -93,3 +93,7 @@ with open(args.filename) as f:
 # :timil.sgra fi
 # bin ~$
 # bin ~$
+#
+# https://docs.python.org/2/howto/argparse.html
+#
+# https://docs.python.org/3/library/argparse.html
