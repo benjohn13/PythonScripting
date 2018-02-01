@@ -1,7 +1,6 @@
 # Writing a script that can parse a file with over 479,000 words and find 
 # specific (or partial) words that we give as input.
 
-
 # bin $
 # bin $ sudo yum install -y words
 # Loaded plugins: fastestmirror
