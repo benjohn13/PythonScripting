@@ -1,4 +1,4 @@
-# Python_Scripting
+# python_scripting
 This repository consists of scripts geared towards System Administrators; a mix of notes from online courses, real life problems 
 and mentor recommendations. Python is an Object-Oriented Programming language (OOP), encourages the re-use of good code and is 
 installed on many Linux distributions today by default. This makes Python an excellent choice of language for Linux SysAdmins to 
