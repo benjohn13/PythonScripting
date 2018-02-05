@@ -1,0 +1,69 @@
+# Use pip install to download packages like this AWS one
+~ $ 
+~ $ sudo pip install boto3
+~ $
+~ $ python
+>>> import boto3
+>>> boto3
+<module 'boto3' from '/home/user/.local/lib/python2.7/site-packages/boto3/__init__.pyc'>
+>>> 
+
+
+# Use pip list to looking at a short list of things
+~ $
+~ $ pip list --user
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|co
+lumns) in your pip.conf under the [list] section) to disable this warning.
+boto3 (1.5.22)
+botocore (1.8.36)
+docutils (0.14)
+futures (3.2.0)
+jmespath (0.9.3)
+python-dateutil (2.6.1)
+s3transfer (0.1.12)
+~ $
+~ $
+~ $ pip list --user --format=columns
+Package         Version
+--------------- -------
+boto3           1.5.22 
+botocore        1.8.36 
+docutils        0.14   
+futures         3.2.0  
+jmespath        0.9.3  
+python-dateutil 2.6.1  
+s3transfer      0.1.12 
+
+
+# Use pip freeze to see current version of our packages
+# You can also use pip freeze to generate output and manipulate
+~ $
+~ $ pip freeze --user
+boto3==1.5.22
+botocore==1.8.36
+docutils==0.14
+futures==3.2.0
+jmespath==0.9.3
+python-dateutil==2.6.1
+s3transfer==0.1.12
+~ $
+~ $ pip freeze -- user | grep boto3
+boto3==1.5.22
+~ $
+~ $ pip freeze --user | grep boto3 > requirements.txt
+~ $ cat requirements.txt 
+boto3==1.5.22
+~ $ 
+~ $ sudo pip install -r requirements.txt
+Requirement already satisfied: boto3==1.5.22 in /usr/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: botocore<1.9.0,>=1.8.36 in /usr/lib/python2.7/site-packages (from boto3==1.5.22->-r requirements.txt (line 
+1))
+...........
+
+
+# Cool way to pip uninstall to do a bundle of third-party packages
+~ $ 
+~ $ pip freeze --user > requirements.txt
+~ $ 
+~ $ pip uninstall -r requirements.txt
+...........
