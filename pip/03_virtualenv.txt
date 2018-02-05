@@ -1,0 +1,54 @@
+# Install virtualenv so you can test your code in different environments
+# based on python versions (a sandbox).
+
+
+~ $
+~ $ which python
+/usr/bin/python
+~ $
+~ $ pip install --user virtualenv
+Requirement already satisfied: virtualenv in /usr/lib/python2.7/site-packages
+~ $
+~ $ which virtualenv
+/bin/virtualenv
+
+
+# Create a virtual environment
+~ $
+~ $ mkdir venvs
+virtualenv venvs/experiment
+New python executable in /home/user/venvs/experiment/bin/python
+Installing setuptools, pip, wheel...done.
+
+
+# Activate (go into) the virtual environment
+~ $
+~ $ source venvs/experiment/bin/activate
+(experiment) ~ $ 
+(experiment) ~ $ pip list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|co
+lumns) in your pip.conf under the [list] section) to disable this warning.
+pip (9.0.1)
+setuptools (38.5.0)
+wheel (0.30.0)
+(experiment) ~ $ 
+(experiment) ~ $ pip install flask
+(experiment) ~ $ pip list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|co
+lumns) in your pip.conf under the [list] section) to disable this warning.
+click (6.7)
+Flask (0.12.2)
+itsdangerous (0.24)
+Jinja2 (2.10)
+MarkupSafe (1.0)
+pip (9.0.1)
+setuptools (38.5.0)
+Werkzeug (0.14.1)
+wheel (0.30.0)
+(experiment) ~ $ 
+
+
+# Deactivate (leave) the virtual environment
+(experiment) ~ $ 
+(experiment) ~ $ deactivate
+~ $
