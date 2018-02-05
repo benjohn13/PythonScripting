@@ -21,4 +21,5 @@
 
 
 # If you need to update pip to the most recent version
+~ $ 
 ~ $ sudo pip install --upgrade pip
