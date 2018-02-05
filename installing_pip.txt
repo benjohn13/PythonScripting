@@ -1,0 +1,24 @@
+# Assuming you are using CENTOS/REDHAT Linux 
+# Make sure everything is up to date
+~ $ 
+~ $ sudo yum update
+~ $ sudo yum upgrade python-setuptools
+
+
+# Install epel
+~ $
+~ $ sudo yum install epel-release
+
+
+# Installing pip and wheel
+~ $ 
+~ $ sudo yum install -y python-pip python-wheel
+
+
+# Checking pip version
+~ $ 
+~ $ pip -V
+
+
+# If you need to update pip to the most recent version
+~ $ sudo pip install --upgrade pip
