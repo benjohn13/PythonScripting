@@ -16,7 +16,7 @@ if count:
 else:
     count = 1
 
-multi_echo(message, count
+multi_echo(message, count)
 
 # bin $ 
 # bin $ sudo chmod u+x echo_mess 
